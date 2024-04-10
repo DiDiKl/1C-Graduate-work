@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a059655f-a015-4198-ab25-9bf8f57b4d80">
+  <producedTypes>
+    <selectionType typeId="768cdc1f-5ce3-4791-960b-f61c2fb4cc31" valueTypeId="25c8ac3a-2c84-4deb-9a5e-8ab52335e629"/>
+    <listType typeId="8603516e-62d1-43dc-a4a2-d375cd283f43" valueTypeId="7bb8af74-90a0-4336-8d2f-29205bbda4da"/>
+    <managerType typeId="bb7d97cb-f2e2-43d1-a08d-3b0402a3b1bb" valueTypeId="677471de-3f13-43a8-b5c9-f707ccd5894c"/>
+    <recordSetType typeId="4f131c92-d6de-4274-b1cb-69196ef214d7" valueTypeId="e73af83d-a373-42a5-97ae-25b4cf368c92"/>
+    <recordKeyType typeId="64245658-1ac8-4f08-88c5-43dfac32134a" valueTypeId="c41cfa5e-6923-43c3-baa2-49dc51e01dc6"/>
+    <recordType typeId="578f7668-e51f-4404-9fb3-130edfe8f136" valueTypeId="0c79a3dc-4276-473b-b529-cc8097de1b27"/>
+    <recalcsType typeId="b82e1154-1109-42d1-b91a-2302cf8f2704" valueTypeId="767e935b-b829-4da3-a7e7-b6b54b813729"/>
+  </producedTypes>
+  <name>НалоговыеОтчисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Налоговые отчисления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <basePeriod>true</basePeriod>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.Налоги</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="58f57feb-675b-4c91-a39f-a059c1533f62">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Деньги</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="ab91f24d-3ade-4531-b53e-7ac6d0c50e19">
+    <name>Размер</name>
+    <synonym>
+      <key>ru</key>
+      <value>%</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Деньги</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="7cadda13-5674-4124-b940-d14a07352cad">
+    <name>ПериодРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период расчета</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="b3725d02-24c4-4641-bc31-140ed1e97f6f">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="24461640-7ef4-442b-887d-d441746d861a">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:CalculationRegister>

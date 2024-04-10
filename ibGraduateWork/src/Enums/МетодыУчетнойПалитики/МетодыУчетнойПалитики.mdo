@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f7052d53-ad91-4104-b724-1730fb5b70fc">
+  <producedTypes>
+    <refType typeId="2efcafb9-2ed1-481b-89b8-28db96d4f99e" valueTypeId="75b494b0-1492-431f-a8ce-ed281e321a5f"/>
+    <listType typeId="11837727-bd5c-4301-84ae-816e8cfdb0f8" valueTypeId="345947a2-6ae6-4917-9cb7-be5b182e9951"/>
+    <managerType typeId="5e175982-5733-4d1c-8c00-79bb51a7b6fa" valueTypeId="6bd343bd-3ce3-4941-b244-e970a45341c8"/>
+  </producedTypes>
+  <name>МетодыУчетнойПалитики</name>
+  <synonym>
+    <key>ru</key>
+    <value>Методы учетной палитики</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="cb25f29f-b55a-4496-a509-bc3ce12db244">
+    <name>ЛИФО</name>
+    <synonym>
+      <key>ru</key>
+      <value>LIFO</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="602ed242-7f0f-40fe-a268-1755e3e3a061">
+    <name>ФИФО</name>
+    <synonym>
+      <key>ru</key>
+      <value>FIFO</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

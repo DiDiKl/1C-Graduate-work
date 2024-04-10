@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e5e60f6f-cd86-4f47-ba7c-9d73beb55e8f">
+  <name>ДокументКассовыйОрдерКлиентСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документ кассовый ордер клиент сервер</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <server>true</server>
+</mdclass:CommonModule>

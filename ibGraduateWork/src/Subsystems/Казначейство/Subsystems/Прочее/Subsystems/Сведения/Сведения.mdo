@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d26eb97a-ec22-4450-93eb-d1ebf7b3425e">
+  <name>Сведения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.КурсыВалют</content>
+  <parentSubsystem>Subsystem.Казначейство.Subsystem.Прочее</parentSubsystem>
+</mdclass:Subsystem>

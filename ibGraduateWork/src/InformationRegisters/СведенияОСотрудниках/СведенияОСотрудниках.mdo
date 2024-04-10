@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1827a4c3-bf7d-4789-ac50-086bd224b0b2">
+  <producedTypes>
+    <selectionType typeId="879bd896-cb17-4d87-b14e-e2edde61967d" valueTypeId="fca01eeb-7468-4724-9b59-95a698da3192"/>
+    <listType typeId="580b81fc-a27a-468d-9778-550423ae78ac" valueTypeId="dd7ff536-6d01-406f-9728-dcf0964a8dcc"/>
+    <managerType typeId="98eed707-9de2-4bb7-ada6-f8a03d281539" valueTypeId="4faa312a-00e0-40d7-81df-73d1d601511b"/>
+    <recordSetType typeId="38bb1383-2bec-4d38-a75b-6c472b95f0dc" valueTypeId="6ab8b384-b126-4545-8d86-dff13e883d05"/>
+    <recordKeyType typeId="085c3019-97d1-4a4d-84cd-78315b3a1484" valueTypeId="bf99fac7-566a-4060-a35e-91e60db786a3"/>
+    <recordType typeId="ccb97daa-a192-4ff9-862d-32c1efc10405" valueTypeId="29645172-484e-4589-9813-75b05d50cd3e"/>
+    <recordManagerType typeId="0ee68468-7c0f-41e1-bdb1-57804e066f9a" valueTypeId="3b675675-7935-42cd-b972-bbc7dce69c6f"/>
+  </producedTypes>
+  <name>СведенияОСотрудниках</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения о сотрудниках</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="472bd1ea-96b4-47a9-9dfa-0ab0797c18a0">
+    <name>Оклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оклад</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Деньги</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5f38d5a4-b7c2-40fb-99df-2581f96c31ba">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5b662bf7-901b-44fc-8a63-d311383469cc">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

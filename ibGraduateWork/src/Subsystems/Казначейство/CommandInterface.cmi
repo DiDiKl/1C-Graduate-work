@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <subsystemsOrder>
+    <subsystems>Subsystem.Казначейство.Subsystem.Касса</subsystems>
+    <subsystems>Subsystem.Казначейство.Subsystem.Банк</subsystems>
+    <subsystems>Subsystem.Казначейство.Subsystem.Прочее</subsystems>
+    <subsystems>Subsystem.Казначейство.Subsystem.РегистрыСведений</subsystems>
+    <subsystems>Subsystem.Казначейство.Subsystem.БухгалтерскийУчет</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

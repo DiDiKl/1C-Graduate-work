@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a914482c-fd52-4395-9d66-8b15c5ba15fa">
+  <producedTypes>
+    <objectType typeId="fabe96a4-2f77-431d-9ea6-14c8e944c393" valueTypeId="20fb8b96-92f1-416e-9f0f-3ee28a34bd6b"/>
+    <managerType typeId="ca63e96a-c5f1-4325-a6b1-e80146272310" valueTypeId="72c3ba71-6a61-409d-8942-ba2aa003dfd8"/>
+  </producedTypes>
+  <name>ЗагрузкаНоменклатурыИзCSV</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка товара из CSV-файла</value>
+  </synonym>
+  <defaultForm>DataProcessor.ЗагрузкаНоменклатурыИзCSV.Form.Форма</defaultForm>
+  <attributes uuid="9bc063ad-608a-4a9b-88a9-9ad917c31ad2">
+    <name>ПутьКФайлу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к файлу</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="0a5935d7-3e6c-454e-9960-c82f8b56e5c8">
+    <producedTypes>
+      <objectType typeId="e9a71315-b1c1-4b80-abbf-fe8dc9994975" valueTypeId="206ee8ad-cc93-4275-9823-33d08c2cefce"/>
+      <rowType typeId="0dcd4c3a-188d-4cb0-9854-1234b6cff520" valueTypeId="289762a8-1aec-4548-9317-830b346b6684"/>
+    </producedTypes>
+    <name>СписокТоваров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список товаров</value>
+    </synonym>
+    <attributes uuid="3cf1f4dd-7a4c-42e7-a984-a88dd1d65a64">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Товар</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1a27f584-3cc8-491b-ac3e-47a3a1e30e61">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <type>
+        <types>DefinedType.Деньги</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="028b00f5-5668-49f2-953e-0f499b12100a">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="362596d6-f39e-42b1-a141-bfbb8f96f83d">
+      <name>Стоимость</name>
+      <synonym>
+        <key>ru</key>
+        <value>Стоимость</value>
+      </synonym>
+      <type>
+        <types>DefinedType.Деньги</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="57ef828f-c213-47f6-b5c3-8e5c771746f1">
+    <producedTypes>
+      <objectType typeId="5e4a76f7-2833-48ad-a6bf-d40cf908a765" valueTypeId="029cff1b-77cf-4cc8-8f52-af6b7ee394b3"/>
+      <rowType typeId="87bfa713-3879-4a4e-bee9-be022023ce53" valueTypeId="84d70a8a-3509-4947-943d-5b2b74166d11"/>
+    </producedTypes>
+    <name>СписокОтсутствующихТоваров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список отсутствующих товаров</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="fe7eb2df-881b-41b9-aea9-3a17497e5fb1">
+      <name>КДобавлению</name>
+      <synonym>
+        <key>ru</key>
+        <value>К добавлению</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:BooleanValue">
+        <value>true</value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="18c3bd56-3503-4e94-a370-28100555a66d">
+      <name>Группа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Группа</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceFoldersAndItems>Folders</choiceFoldersAndItems>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="03fff33f-0984-4ced-9e22-f92b973201af">
+      <name>ВидНоменклатуры</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВидыНоменклатуры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a4a6339e-e447-4a0d-a06c-7d1bce661901">
+      <name>Наименование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Товар (Наименование)</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>25</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="50c34db5-6cb5-4ec1-8d55-a5a7fe8191ce">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <type>
+        <types>DefinedType.Деньги</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e84e884a-5e38-4625-99f2-55fdd91e3b47">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9aa4c498-0017-436c-ad03-bbb19bff325f">
+      <name>Стоимость</name>
+      <synonym>
+        <key>ru</key>
+        <value>Стоимость</value>
+      </synonym>
+      <type>
+        <types>DefinedType.Деньги</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="d5933b30-7e5f-4cf2-a9d5-81040a9b3869">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="ff7cfdde-3dab-4256-b53e-00890fca3db7">
+    <name>ЗагрузитьФайлCSVПоступление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузить файл CSV</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="6897833d-d676-4509-ae27-4a4a9db20e32">
+    <name>ЗагрузитьФайлCSVРеализация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузить файл CSV</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

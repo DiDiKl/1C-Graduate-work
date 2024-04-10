@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccountingRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a45548a6-d3df-4b50-8eea-a3157d11a1f7">
+  <producedTypes>
+    <selectionType typeId="7df7eeb8-4979-4f69-abfb-7496f94527e6" valueTypeId="24991835-b00f-4307-b7a7-65356ac27345"/>
+    <listType typeId="eb35f083-3310-4ab6-9094-0018d125443c" valueTypeId="63558e72-a281-45c2-8dc2-7ce74b7d1ed9"/>
+    <managerType typeId="1e8e1d68-0d12-4079-b033-e511e8365c36" valueTypeId="6a375e93-bc02-4475-bf7f-c6138fda37d9"/>
+    <recordSetType typeId="eee46478-b076-4a1f-adfa-65bf93b75176" valueTypeId="28f74cfb-364c-49f9-b9ac-8e1368c7d7c4"/>
+    <recordKeyType typeId="3ea57026-ffdf-425c-a514-36c2cfd9869e" valueTypeId="2f5bc552-57e1-4981-bd6e-f92843e094d1"/>
+    <recordType typeId="3d0c0e24-541a-4ef5-a213-2cd7379e2c05" valueTypeId="242505da-4639-4b84-bf0c-9a410cd80eb4"/>
+    <extDimensionsType typeId="4e58834a-b6c4-4bd7-a9fb-b33639f6c920" valueTypeId="43dc7192-66c8-4dc2-a0cd-3e8fe4e20661"/>
+  </producedTypes>
+  <name>Хозрасчетный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хозрасчетный (регистр)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <chartOfAccounts>ChartOfAccounts.Хозрасчетный</chartOfAccounts>
+  <correspondence>true</correspondence>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="bda2d43f-2c52-4e28-9f66-bfe3b52e6f1b">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <accountingFlag>ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный</accountingFlag>
+  </resources>
+  <resources uuid="93e4f181-36ac-4ece-972d-e0b4fe232058">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Деньги</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <balance>true</balance>
+    <extDimensionAccountingFlag>ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой</extDimensionAccountingFlag>
+  </resources>
+  <resources uuid="be96ef99-9660-4422-870c-a564a948a794">
+    <name>СуммаВалюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма валюта</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Деньги</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <accountingFlag>ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный</accountingFlag>
+  </resources>
+</mdclass:AccountingRegister>

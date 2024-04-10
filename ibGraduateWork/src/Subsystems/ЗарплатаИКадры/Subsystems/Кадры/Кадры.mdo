@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="29e1e3d0-48f9-4f27-b495-af432d940be8">
+  <name>Кадры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кадры</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <subsystems>Справочники</subsystems>
+  <subsystems>РегистрыСведений</subsystems>
+  <parentSubsystem>Subsystem.ЗарплатаИКадры</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0d8cc0b6-1c2c-4af9-b4b1-c09860de216e">
+  <producedTypes>
+    <objectType typeId="073efc85-d1ad-4324-b789-de59d43756a8" valueTypeId="d8224d4c-0c9f-4417-8502-d90f3605baaf"/>
+    <refType typeId="51c36ea2-30cc-4d5b-b2f4-46b8e3450da0" valueTypeId="5cef0e4e-b0ab-482f-9170-ba79bd9b3d28"/>
+    <selectionType typeId="a088543c-5498-465f-9f7d-20591b951283" valueTypeId="9a8c0b35-a634-4db1-9292-215eec123c61"/>
+    <listType typeId="3ba0167f-9e2d-4754-9d9b-0b09a889e805" valueTypeId="307a3f65-95ff-4415-b321-94fa03d3910b"/>
+    <managerType typeId="bf8fa9e1-dd7d-4973-84f5-8ad6d286cd60" valueTypeId="08032313-d599-4486-8f1a-4e4008808078"/>
+    <displacingCalculationTypesType typeId="a792f3e0-8c60-4f7a-917b-4fb48456fe81" valueTypeId="c8ad12f5-963a-4764-a436-9fd0d5bb4b23"/>
+    <displacingCalculationTypesRowType typeId="5c1b5eb7-accc-41ee-a13b-97e67678491f" valueTypeId="13227038-aa4e-4742-9823-9f8b924fe5a5"/>
+    <baseCalculationTypesType typeId="7fff562d-dba0-4dad-801c-97161331ade9" valueTypeId="87634582-6c0b-423f-9029-85d2951dbd6e"/>
+    <baseCalculationTypesRowType typeId="d2853acd-7317-4bc1-8f71-040f61ad87c2" valueTypeId="e186fc0c-7cf8-4776-a417-ebf542f48f85"/>
+    <leadingCalculationTypesType typeId="fa9aada3-1262-457e-89f8-4deb26b369d1" valueTypeId="5727089a-ab9e-4579-bc50-e3dfc777093e"/>
+    <leadingCalculationTypesRowType typeId="bb758cac-7224-4b97-8362-9a96ef19e4ab" valueTypeId="5fac76e0-1840-442c-a30d-070e6549e90b"/>
+  </producedTypes>
+  <name>ОсновныеНачисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основные начисления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCalculationTypes.ОсновныеНачисления.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCalculationTypes.ОсновныеНачисления.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>9</codeLength>
+  <descriptionLength>40</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <actionPeriodUse>true</actionPeriodUse>
+  <predefined>
+    <items id="43c69889-01ea-42a7-b5a7-5a7710b6b452">
+      <name>Оклад</name>
+      <description>Оклад</description>
+      <code xsi:type="core:StringValue">
+        <value>1</value>
+      </code>
+    </items>
+  </predefined>
+</mdclass:ChartOfCalculationTypes>

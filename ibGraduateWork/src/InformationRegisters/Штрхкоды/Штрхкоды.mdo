@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="10200862-5720-4ba1-9c30-1867201ba71e">
+  <producedTypes>
+    <selectionType typeId="5688afe5-9f2b-4e64-9ebc-893124eac716" valueTypeId="150e5dd4-b7d0-42e1-9586-d5395304170d"/>
+    <listType typeId="99e781d4-d33a-445f-897b-5f36c25fc887" valueTypeId="43b551d5-94b9-441c-882d-b95d0724c6c7"/>
+    <managerType typeId="302ca70f-eb31-4d77-b920-03b4a4d54c14" valueTypeId="2609ea78-fb17-4f96-a0f0-62fbbde558dd"/>
+    <recordSetType typeId="26645aa5-8563-471c-b036-44930aad997f" valueTypeId="fcdbb176-0c05-4fa1-a2c0-1b470261c7b2"/>
+    <recordKeyType typeId="bf5ddea0-e330-4d34-af63-ba370e0931fc" valueTypeId="8d746584-d729-4a01-a4a3-b26f7cbdc282"/>
+    <recordType typeId="7e40023d-1a6c-4a60-8e38-20d08789d22a" valueTypeId="ab5e3ff6-61d9-4d46-8d2b-ef8d5bea76d7"/>
+    <recordManagerType typeId="bb04456a-9d26-43a0-8fea-b9f4ab1fd1b8" valueTypeId="5d1a40ad-ef31-4454-be2a-11ea0f0dd942"/>
+  </producedTypes>
+  <name>Штрхкоды</name>
+  <synonym>
+    <key>ru</key>
+    <value>Штрхкоды</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.Штрхкоды.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="072a21d9-5949-4382-8e0b-483f97d9bf81">
+    <name>Штрихкод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штрихкод</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>13</length>
+      </stringQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧГ=6,6,1</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧГ=6,6,1</value>
+    </editFormat>
+    <mask>9999999999999</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c6333e77-9031-4722-bd0d-aedbf8e9ee8f">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="ae8bfb1f-a1de-465f-9d60-73824b8b0c52">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

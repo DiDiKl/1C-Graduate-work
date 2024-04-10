@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd7600ea-ec05-4c20-b125-03194898831b">
+  <producedTypes>
+    <objectType typeId="ce8857f7-2bc9-466e-938a-37d099a9d925" valueTypeId="abe156b4-9a12-4ea2-b511-3c5ea559c244"/>
+    <refType typeId="d02cc6e2-1dfc-41b4-acb4-c28cc7da03fa" valueTypeId="182304bb-060b-40b9-910d-b676db646e67"/>
+    <selectionType typeId="a826f4dc-f79c-4719-bc27-e88a347ebe36" valueTypeId="38e53ccd-48e4-4ff6-be0b-3393d6366006"/>
+    <listType typeId="b69df54f-8e45-4039-a272-893ae91a5446" valueTypeId="7ad9bb34-af37-4185-b3aa-27c53d56629b"/>
+    <managerType typeId="a7bb6949-b51e-4ce6-aad9-d84aeffa8948" valueTypeId="a51257df-ce2f-40b6-818b-767b369385b3"/>
+  </producedTypes>
+  <name>ВидыЦен</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды цен</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыЦен.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыЦен.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="e980c262-49ae-4268-a8f3-7132ec7c62f2">
+      <name>Закупочная</name>
+      <description>Закупочная</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="dff1f7f2-2843-48c2-a6ad-bdd5a2614c90">
+      <name>Оптовая</name>
+      <description>Оптовая</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="54b5655a-7b8f-49fb-b9db-ed69307bbd5e">
+      <name>Розничная</name>
+      <description>Розничная</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВидыЦен.Form.ФормаЭлемента</defaultObjectForm>
+  <forms uuid="da70eae0-e4a4-4f64-bbd7-118b82391d1d">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

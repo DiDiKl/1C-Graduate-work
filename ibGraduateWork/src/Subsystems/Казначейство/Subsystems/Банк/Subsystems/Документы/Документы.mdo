@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e437f53a-095e-4967-9c28-783b5eeada0b">
+  <name>Документы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.СписаниеСРасчетногоСчета</content>
+  <content>Document.ПоступлениеНаРасчетныйСчет</content>
+  <content>DocumentJournal.БезналичныеПлатежи</content>
+  <parentSubsystem>Subsystem.Казначейство.Subsystem.Банк</parentSubsystem>
+</mdclass:Subsystem>

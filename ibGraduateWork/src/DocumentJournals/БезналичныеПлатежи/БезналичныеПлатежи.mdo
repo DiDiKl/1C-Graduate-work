@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26f16658-7f8f-4505-ab08-f55c7a20d79a">
+  <producedTypes>
+    <selectionType typeId="13ad083c-e1e7-4e40-9f97-7ee84f5df945" valueTypeId="60592875-17bd-4b15-81db-f389416c3f47"/>
+    <listType typeId="bb8ad62a-d907-4350-8d0e-5e2cbb0e93ca" valueTypeId="a8433d4a-e2e4-4759-a80e-bb16c1e75613"/>
+    <managerType typeId="c447f3ad-eb30-4a8c-bbd8-c3a4ba7b4286" valueTypeId="118327ec-4e21-4ad0-bc4a-544d92a4d40a"/>
+  </producedTypes>
+  <name>БезналичныеПлатежи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Безналичные платежи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.СписаниеСРасчетногоСчета</registeredDocuments>
+  <registeredDocuments>Document.ПоступлениеНаРасчетныйСчет</registeredDocuments>
+  <columns uuid="d2691ca9-7a0a-4517-8f63-abfc7afc448a">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <references>Document.СписаниеСРасчетногоСчета.Attribute.Контрагент</references>
+    <references>Document.ПоступлениеНаРасчетныйСчет.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="54cb823e-2471-41df-987e-e2ff00dd5ceb">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.СписаниеСРасчетногоСчета.Attribute.Валюта</references>
+    <references>Document.ПоступлениеНаРасчетныйСчет.Attribute.Валюта</references>
+  </columns>
+  <columns uuid="0f4e8e51-cb31-49fd-aedf-89864e45b159">
+    <name>СуммаКОплате</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма к оплате</value>
+    </synonym>
+    <references>Document.СписаниеСРасчетногоСчета.Attribute.СуммаКОплате</references>
+    <references>Document.ПоступлениеНаРасчетныйСчет.Attribute.СуммаКОплате</references>
+  </columns>
+  <columns uuid="1a5a90ae-00c0-480b-81fa-f2106ebf11fa">
+    <name>СчетОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет организации</value>
+    </synonym>
+    <references>Document.СписаниеСРасчетногоСчета.Attribute.СчетОрганизации</references>
+    <references>Document.ПоступлениеНаРасчетныйСчет.Attribute.СчетОрганизации</references>
+  </columns>
+  <columns uuid="7257f3b8-7d07-4f25-acc7-caf3068157b8">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <references>Document.СписаниеСРасчетногоСчета.Attribute.Сумма</references>
+    <references>Document.ПоступлениеНаРасчетныйСчет.Attribute.Сумма</references>
+  </columns>
+</mdclass:DocumentJournal>

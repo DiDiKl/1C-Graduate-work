@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c8efe15-306c-4a99-bf7c-a5d8555a69b4">
+  <name>Администрирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Администрирование</picture>
+  </picture>
+  <content>Constant.ОсновнаяВалюта</content>
+  <content>Constant.ВалютаУчета</content>
+  <content>CommonForm.ФормаНастроек</content>
+  <content>Constant.УчетПоПартиям</content>
+  <content>Constant.ОсновнойВидЦеныЗакупки</content>
+  <content>Constant.ОсновнойВидЦеныПродажи</content>
+  <content>Constant.СкладПоступленияПоумолчанию</content>
+  <content>Constant.СкладРеализацииПоумолчанию</content>
+  <content>Constant.ОсновнойСчетОрганизации</content>
+  <content>InformationRegister.УчетнаяПолитика</content>
+  <content>Constant.РазмерНДФЛ</content>
+  <content>Constant.ОсновнойГрафикРаботы</content>
+  <content>FunctionalOption.УчетПоПартиям</content>
+</mdclass:Subsystem>

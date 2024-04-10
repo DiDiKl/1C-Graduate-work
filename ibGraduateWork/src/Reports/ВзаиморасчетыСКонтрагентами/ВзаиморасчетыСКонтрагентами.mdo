@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d366f635-0d49-4653-8acd-677aa86a8fd0">
+  <producedTypes>
+    <objectType typeId="0d14e3d5-d042-4bea-9162-146ff0cd4dc8" valueTypeId="70b44454-8b5c-482c-adf4-9db3de817b9e"/>
+    <managerType typeId="6a036882-1cb2-4709-bb57-cbe9229059b7" valueTypeId="9b3e72c7-e85e-4099-9e7f-a638580d1d0a"/>
+  </producedTypes>
+  <name>ВзаиморасчетыСКонтрагентами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаиморасчеты с контрагентами</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.ВзаиморасчетыСКонтрагентами.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="57423cb2-66a3-451b-aa0e-5c09738916b3">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="a0d6a4da-b27f-42fd-bfd2-711dcdc84ff9">
+    <name>ВзаиморасчетыСКонтрагентами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Взаиморасчеты с контрагентами</value>
+    </synonym>
+    <group>ActionsPanelReports</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

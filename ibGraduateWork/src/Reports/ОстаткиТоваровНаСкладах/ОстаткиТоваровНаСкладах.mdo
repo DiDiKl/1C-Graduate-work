@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="112dfe2f-9293-4633-aefc-1727837f8a5a">
+  <producedTypes>
+    <objectType typeId="28647600-692b-4fa1-9e4a-4bee0a8f8903" valueTypeId="746e85fa-70e8-4dbf-b744-496bbe5bcea6"/>
+    <managerType typeId="1438c0ff-f36c-4a74-aff8-aa8c5804aeda" valueTypeId="41b474df-aadc-4d3d-8c35-bc11a772ad69"/>
+  </producedTypes>
+  <name>ОстаткиТоваровНаСкладах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки товаров на складах</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.ОстаткиТоваровНаСкладах.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="d40d8d45-80d2-4805-9b0f-ff3ea4849108">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="728d6687-3d8a-4f08-96f3-7094c4b4c0b5">
+    <name>ОстаткиТоваровНаСкладах</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остатки товаров на складах</value>
+    </synonym>
+    <group>ActionsPanelReports</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="79775e0e-b56b-40f6-a80f-ef8bd605b566">
+  <producedTypes>
+    <objectType typeId="f60d841c-84bd-4464-ab53-b5155ae22775" valueTypeId="d7fc7d5b-771f-4a28-afb8-2852354cd855"/>
+    <refType typeId="e968b846-52ba-4575-bf83-ad9fdf9f16c2" valueTypeId="6a0fbb09-2201-4a5d-87e5-33672d5ced17"/>
+    <selectionType typeId="c8bcb5f0-b858-4cb9-8318-751d4d91a489" valueTypeId="595f5c23-47a1-41c5-b623-b4120e85f125"/>
+    <listType typeId="9d9e1946-e554-4614-a1a0-302a6891f48a" valueTypeId="3e136f9b-c334-46c1-892f-83279d185da3"/>
+    <managerType typeId="ab03f253-5edf-46c9-bc36-041b11c6acf3" valueTypeId="e088e02b-165a-4f53-8b0b-16227ec07016"/>
+  </producedTypes>
+  <name>СчетаОрганизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счета организации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СчетаОрганизации.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СчетаОрганизации.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.СчетаОрганизации.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="32111191-8fdd-4e84-b0c2-669a35accdab">
+    <name>НомерСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер счета</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>20</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧГ=4,0</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧГ=4,0</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ae35eec6-b88d-4ac1-8a98-31dee60db80f">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="2c709a14-2fad-47f0-b4e6-a6964a9d005e">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

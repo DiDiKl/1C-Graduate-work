@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="29e3c580-b9c4-4ec2-9867-0667cb608fe3">
+  <producedTypes>
+    <objectType typeId="4abcdad4-4ff5-4f68-ae0e-0fafa0dcfadc" valueTypeId="c0a49a31-0bcd-4138-9cf2-bcb189cb03c1"/>
+    <managerType typeId="7dd48948-9409-48d3-8bdc-475f0ddd1420" valueTypeId="d340b3e4-4808-4d17-87cc-8562e707ae9c"/>
+  </producedTypes>
+  <name>УстановкаШтрихкодов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка штрихкодов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УстановкаШтрихкодов.Form.Форма</defaultForm>
+  <tabularSections uuid="b1eb4c4d-bf68-47a3-a51b-59401dc63084">
+    <producedTypes>
+      <objectType typeId="2eab8011-4915-479e-bf82-f42a4710ba4c" valueTypeId="c7439a37-351c-499c-afeb-e4f3f1c961af"/>
+      <rowType typeId="43c913ea-7a26-49dd-a4c7-55534d45d47a" valueTypeId="86a97b1e-9aa6-4818-82e2-8557a276a1a8"/>
+    </producedTypes>
+    <name>СписокНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список номенклатуры</value>
+    </synonym>
+    <attributes uuid="f6cce614-2fc5-446b-bea1-750b2d6ad7cf">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8ac26406-e4d0-418e-909c-a6302a3aee8a">
+      <name>Штрихкод</name>
+      <synonym>
+        <key>ru</key>
+        <value>Штрихкод</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>13</length>
+        </stringQualifiers>
+      </type>
+      <format>
+        <key>ru</key>
+        <value>ЧГ=6,6,1</value>
+      </format>
+      <mask>9999999999999</mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="0ea10625-090a-4d8a-a886-48d33d5a67fc">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

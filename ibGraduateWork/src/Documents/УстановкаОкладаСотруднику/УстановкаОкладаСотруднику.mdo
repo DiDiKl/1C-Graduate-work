@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4558e2f6-b2c1-4b3e-aa58-40df3eb8b864">
+  <producedTypes>
+    <objectType typeId="adddea78-8441-4068-b303-3f4c0fef86e4" valueTypeId="f0a281fb-89fe-44ac-8b77-4a2f77fca3e1"/>
+    <refType typeId="455f5185-04e4-4191-9f59-877de0cc1ba3" valueTypeId="c7f6165b-3780-49bf-ba6f-4b1e3b0d9756"/>
+    <selectionType typeId="64ebd8a7-58c1-4f2d-a4ef-b2a3152e66b1" valueTypeId="93c19f76-952e-4678-a2cf-ef8cfc64c808"/>
+    <listType typeId="1f0d4b9a-4ce9-456b-a1e2-4cd88b6751f0" valueTypeId="063f5462-2dda-4b30-859d-3c74d5363146"/>
+    <managerType typeId="0c3392a1-902f-467a-bb47-06b418e9cc81" valueTypeId="2cb517ca-d733-4e7b-b684-ce2af6188011"/>
+  </producedTypes>
+  <name>УстановкаОкладаСотруднику</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка оклада сотруднику</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.УстановкаОкладаСотруднику.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.УстановкаОкладаСотруднику.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.УстановкаОкладаСотруднику.Form.ФормаСписка</defaultListForm>
+  <registerRecords>InformationRegister.СведенияОСотрудниках</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="4f8dc810-83a2-4dde-877e-aeaff64ffa36">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="79a7d978-ef84-4a79-8a5c-1711065339f7">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f1c87b00-9c65-4d34-9db4-77e377d9f220">
+    <name>СуммаОклада</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма оклада</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Деньги</types>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>0</value>
+    </minValue>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="692e5781-2c5c-4ac7-b500-7edbb2f7b60d">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="00d644b8-037e-462e-b2c8-7cfec264becf">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

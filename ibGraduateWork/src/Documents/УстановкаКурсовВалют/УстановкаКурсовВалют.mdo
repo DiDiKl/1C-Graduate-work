@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da341945-eccb-4ec7-ad65-151aecd0043a">
+  <producedTypes>
+    <objectType typeId="9f16041d-fb0b-49da-86c8-7f444d990c95" valueTypeId="5c10c550-addb-43c7-8a21-95c942576806"/>
+    <refType typeId="b5febe0e-fcb5-43ac-866f-2d6f7901c139" valueTypeId="e4202f38-86a5-4712-8661-b6103cf72a19"/>
+    <selectionType typeId="e864295a-28c6-4efe-ae47-88826483f55d" valueTypeId="2afc390d-2f9b-433d-9f82-cc4a89f8a894"/>
+    <listType typeId="988ab028-01ed-4a24-8922-ce6f62fa1336" valueTypeId="7e5798db-ba57-4dea-be5e-dc7096075752"/>
+    <managerType typeId="11cdd438-7b4f-470b-87c9-04d21d69c20f" valueTypeId="aab7ffe6-711e-42e0-bdb3-ef7b3fbe5d8d"/>
+  </producedTypes>
+  <name>УстановкаКурсовВалют</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка курсов валют</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.УстановкаКурсовВалют.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.УстановкаКурсовВалют.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.УстановкаКурсовВалют.Form.ФормаСписка</defaultListForm>
+  <registerRecords>InformationRegister.КурсыВалют</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="df07dfa6-06c0-4c59-8b9a-bf803cf42643">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="53d98489-ce66-42b8-a246-ca88e77e28cd">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="a4d17479-14b5-4516-8aac-7c94eb8ad8ab">
+    <producedTypes>
+      <objectType typeId="68f2112d-84a5-46c0-a996-c09cc063a56b" valueTypeId="14408f6f-13e2-4fff-8f8a-6af6bbc411c2"/>
+      <rowType typeId="1a773905-8483-4946-ab40-0dbe29c7f268" valueTypeId="e78a88c6-faf2-45f3-89a7-4131ee02f2a8"/>
+    </producedTypes>
+    <name>СписокВалют</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список валют</value>
+    </synonym>
+    <attributes uuid="ccb4d52f-6e9d-493b-b85f-5b8be3b93827">
+      <name>Валюта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Валюта</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Валюты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8150deb4-3b89-4c50-878c-de089eda3285">
+      <name>Курс</name>
+      <synonym>
+        <key>ru</key>
+        <value>Курс</value>
+      </synonym>
+      <type>
+        <types>DefinedType.Деньги</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

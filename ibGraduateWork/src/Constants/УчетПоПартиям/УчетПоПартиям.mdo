@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96c6693a-151f-4b8a-896c-b7bb0b867a79">
+  <producedTypes>
+    <managerType typeId="6c51f865-477c-43e9-8e03-4f302863ac9c" valueTypeId="693055dc-0198-48d5-b1a0-2fa3bb1ac9ef"/>
+    <valueManagerType typeId="ec0ce237-c532-40fd-8aff-48c1512569ef" valueTypeId="7c8350c6-6166-42af-9e70-f2745cbd00d5"/>
+    <valueKeyType typeId="057238f1-3900-49b1-88cb-8b085fb72d43" valueTypeId="45d22935-6a0b-4e70-a569-e9048e0e0b65"/>
+  </producedTypes>
+  <name>УчетПоПартиям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет по партиям</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d02ced08-a2dc-443f-ac83-5439bde7dc23">
+  <producedTypes>
+    <selectionType typeId="acb64758-a408-4aba-a778-dbae01343ebd" valueTypeId="cc050277-4cc8-4b50-bbfd-47d35e7991ee"/>
+    <listType typeId="b2b04ef4-f315-4153-98f3-3bf4d13d13c7" valueTypeId="9c2a0f1e-6845-4528-b189-22cc26908062"/>
+    <managerType typeId="b38aaddb-4590-4d60-8718-1f5c00cd9ad9" valueTypeId="7500eb16-e299-4f0c-9f5e-1823a5a72792"/>
+    <recordSetType typeId="53a78b8f-7929-4d3e-9747-958f4411bacd" valueTypeId="d7245ab2-b249-4e66-9019-eab997a7e454"/>
+    <recordKeyType typeId="e5cbe282-c4b4-48d7-bc9d-f75dc564de1a" valueTypeId="0b9a1597-dde4-4d6e-926b-f6267a07ddbc"/>
+    <recordType typeId="76264e37-49d5-429a-aabd-c3c8a069fe8d" valueTypeId="e5b4b208-3fe9-46bf-a85d-0b39a9259e5f"/>
+    <recordManagerType typeId="8060f804-227a-4be2-86fd-4358bd9a4fe5" valueTypeId="77947a3b-5335-4f95-8f82-8821eb2341e1"/>
+  </producedTypes>
+  <name>УчетнаяПолитика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учетная политика</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Year</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a7237a41-8e7c-44db-917b-93c071470d2a">
+    <name>Метод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метод</value>
+    </synonym>
+    <type>
+      <types>EnumRef.МетодыУчетнойПалитики</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+</mdclass:InformationRegister>
